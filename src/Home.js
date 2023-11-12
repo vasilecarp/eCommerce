@@ -47,7 +47,14 @@ function Home() {
           />
         </div>
 
-        <div className="home__row">{/* Product */}</div>
+        <div className="home__row">
+            <Product
+                title="Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED Computer Monitor, 3840 x 1080p Resolution, 1ms Response, FreeSync 2 with HDR"
+                price={899.99}
+                image="https://m.media-amazon.com/images/I/81Zt42ioCgL._AC_SX679_.jpg"
+                rating={5}
+            />
+        </div>
       </div>
     </div>
   );
