@@ -8,7 +8,7 @@ function Product({ id, title, image, price, rating }) {
         <p>{title}</p>
         <p className="product__price">
           <small>$</small>
-          <strong>1,387.99</strong>
+          <strong>{price}</strong>
         </p>
         <div className="product__rating">
           {Array(rating)
@@ -19,7 +19,7 @@ function Product({ id, title, image, price, rating }) {
         </div>
       </div>
       <img
-        src="https://m.media-amazon.com/images/I/61TjVU2HtZL._AC_SX679_.jpg"
+        src={image}
         alt=""
       />
       <button>Add to Basket</button>
