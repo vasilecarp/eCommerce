@@ -8,30 +8,29 @@ function App() {
   return (
     <Router>
       <div className="app">
+        <Header />
         <Routes>
           <Route
             path="/checkout"
             element={
               <div>
-                <Header />
                 <Checkout />
               </div>
             }
-          />          
+          />
           <Route
             path="/"
             element={
-              <div>
-                <Header />
+              <div>                
                 <Home />
               </div>
             }
-          />               
-        
-        {/* Home */}
-        </Routes> 
+          />
+
+          {/* Home */}
+        </Routes>
       </div>
-   </Router>
+    </Router>
   );
 }
 
